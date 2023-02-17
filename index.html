@@ -9,38 +9,36 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Product preview card component</title>
-
-
 </head>
+
+
 <body class="body">
 
   
-  <article class="card">
+  <div class="card">
     
-    <img class="card-image" src="images/image-product-desktop.jpg" alt="Perfume">
+    <img class="card-image" src="images/image-product-desktop.jpg" alt="Preview">
 
-    <div class="card-contain">
-      <aside class="aside">Perfume</aside> <!--No sé si meterlo en un span, aside, etc-->
-      <header class="card-header">
-        <h2 class="title">Gabrielle <br> Essence Eau De Parfum</h2>
-      </header>
+
+    <section class="card-contain">
+      <h2 class="card-title">Gabrielle Essence Eau De Parfum</h2>
+
       <p class="card-text">
         A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.
       </p>
-      <footer class="card-footer">
-        <div class="prices">
-          <p class="new-price">$149.99</p>
-          <p class="old-price">$169.99</p>
-        </div>        
-        <div class="card-button">
-          <img src="images/icon-cart.svg" alt="">
-          <button class="button">Add to Cart</button>
-        </div>
-      </footer>
-    </div>
+
+      <div class="card-price">
+          <strong class="new-price">$149.99</strong>
+          <em class="old-price">$169.99</em>
+      </div>    
+
+      <img class="icon-card" src="images/icon-cart.svg" alt="Card">
+      <button class="btn card-button">Add to Cart</button>
+
+    </section>
     
-  </article>
+  </div>
 
 </body>
 </html>

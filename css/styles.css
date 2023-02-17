@@ -94,7 +94,7 @@
         background-color: var(--color-1);
     }
 
-        .card-button > button {
+        .card-button > .btn {
             border: 0;
             height: 60px;
             width: 300px;
