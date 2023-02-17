@@ -1,6 +1,12 @@
 
 
 
+.card-image {
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+}
+
+
 
 
 /* Pseudoelemento para crear el PERFUME sin escribirlo en el html */
@@ -10,7 +16,58 @@
 }
 
 .card-content {
+    display: flex;
+    /* OJO, esto es CLAVE para organizar el contenido de esta sección */
+    flex-direction: column;
+    justify-content: space-around;
+    /* Align items hace strech por dfecto, aquí estiraba el botón (porque giramos el eje) */
+    align-items: flex-start;
+    border-radius: .5em;
+    padding: 1em;
+    background-color: var(--neutral-color3-style);
 
+}
+
+
+
+.card-title {
+    /* Quitamos el margin del h2 */
+    margin: 0;
+}
+
+.card-text {
+    /* Interlineado */
+    line-height: 2em;
+}
+
+
+.card-price strong {
+    margin-right: .5em;
+    color: var(--primary-color1-style);
+    font-size: 3em;
+}
+
+.card-price del {
+    font-size: small;
+}
+
+
+
+
+.card-button {
+    border-radius: .5em;
+    width: 100%;
+    padding: .5em 0;
+    color: var(--neutral-color3-style);
+    background-color: var(--primary-color1-style);
+}
+
+.icon-card {
+    /* Position relative para colocar la imagen del carrito y que no se mueva */
+    position: relative;
+    left: -.3em;
+    top: .1em;
+    width: fit-content;
 }
 
 

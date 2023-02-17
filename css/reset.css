@@ -1,4 +1,4 @@
-/* Fuente de Letras importadas como siempre
+/* Fuente de Letras importadas como siempre - Aquí no la uso pero la dejo por cómo se vería
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap'); */
@@ -8,12 +8,10 @@
     font-family: "Montserrat";
     src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
   }
-
 @font-face {
     font-family: "Montserrat italic";
     src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
   }
-
 @font-face {
     font-family: "Fraunces";
     src: url(../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
@@ -29,6 +27,7 @@
     --neutral-color2-style:hsl(228, 12%, 48%); /* Dark grayish blue*/
     --neutral-color3-style:hsl(0, 0%, 100%); /* White*/
     
+    --max-width: 800px; /*Lo añado para cambiar cómo de grande se ve en pantalla*/
     --mobile-width: 375px;
     --desktop-width: 1440px;
     font-size: 14px;
@@ -49,7 +48,13 @@ input {
 
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
 }
+
+img {
+    width: 100%;
+}
+
 
 h1, h2, h3 {
     font-family: "Fraunces", serif;

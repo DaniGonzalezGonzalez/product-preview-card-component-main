@@ -1,0 +1,24 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Ponemos min-height para evitar overflow que podría pasar con height*/
+    min-height: 100vh; 
+    /* Aquí le pone margin aunque nunca suele ponerse, se quitó en reset */
+    margin: .5em;
+    font-size: 14px;
+
+    background-color: var(--primary-color2-style);
+}
+
+
+.card {
+    display: flex;
+    width: var(--max-width);
+}
+
+/* A los hijos directos de card y le damos a cada uno un 50%. IMPORTANTE!!!!!!! */
+.card > * {
+    width: 50%;
+}
