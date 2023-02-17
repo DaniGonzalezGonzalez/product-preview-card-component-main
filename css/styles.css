@@ -1,4 +1,40 @@
-.body {
+
+
+
+
+
+/* Pseudoelemento para crear el PERFUME sin escribirlo en el html */
+.card-content::before {
+    content: "Perfume";
+    text-transform: uppercase;
+}
+
+.card-content {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Código mío de aquí para abajo */
+/* .body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +59,7 @@
     width: 50%;
 }
 
-.card-contain {
+.card-content {
     padding: 4.5em;
     width: 50%;
 }
@@ -102,4 +138,4 @@
             font-weight: 700;
             background-color: transparent;
             color: white;
-        }
+        } */

@@ -1,39 +1,71 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/* Fuente de Letras importadas como siempre
 
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap'); */
+
+/* Ahora probaré a cargarlas desde una carpeta dentro del proyecto tras haberlas descargado */
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+
+@font-face {
+    font-family: "Montserrat italic";
+    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  }
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+  }
 
 
-:root {
+:root {    
+    /* Primarios */
+    --primary-color1-style: hsl(158, 36%, 37%); /*Dark cyan*/
+    --primary-color2-style: hsl(30, 38%, 92%); /*Cream*/
+    /* Neutrales */
+    --neutral-color1-style: hsl(212, 21%, 14%); /* Very dark blue*/
+    --neutral-color2-style:hsl(228, 12%, 48%); /* Dark grayish blue*/
+    --neutral-color3-style:hsl(0, 0%, 100%); /* White*/
+    
     --mobile-width: 375px;
     --desktop-width: 1440px;
-
-    /* Primarios */
-    --color-1: hsl(158, 36%, 37%); /*Dark cyan*/
-    --color-2: hsl(30, 38%, 92%); /*Cream*/
-    /* Neutrales */
-    --color-3: hsl(212, 21%, 14%); /* Very dark blue*/
-    --color-4:hsl(228, 12%, 48%); /* Dark grayish blue*/
-    --color-5:hsl(0, 0%, 100%); /* White*/
-
     font-size: 14px;
-    font-family: "Monsterrat", sans-serif;
-
 }
 
-*{
+* {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-h2 {
+button,
+input {
+    border-style: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Fraunces", serif;
+    color: var(--neutral-color1-style);
+}
+
+
+
+/* Código mío abajo */
+/* body {
     margin: 0;
 }
+
+
+h2 {
+    margin: 0;
+} */
 
 
